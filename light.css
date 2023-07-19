@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #f7a668ec;
+    --secondary-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
