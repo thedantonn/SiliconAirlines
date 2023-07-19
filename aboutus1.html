@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(125, 133, 50);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(253, 165, 82, 0.749);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #be791f6d;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(249, 92, 92);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(249, 245, 245);
+  background-color: rgb(24, 75, 5);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Silicon Airlines is India’s largest and most preferred passenger airline and amongst the fastest growing airlines in the world.
+We have a simple philosophy: offer fares that are affordable, flights that are on time, and provide a courteous and hassle-free travel experience across our unparalleled network. We show that low cost does not mean low quality. With our fleet of over 300 aircraft, we operate well over 1,800 daily flights, with an industry leading on-time performance. We offer a simple yet well executed and hassle-free product, which we continue to innovate. With 78 domestic destinations we offer the largest network in India. We are Indian at heart, international in ambition. As such, we are expanding our international operations and (will soon) connect to 32 international destinations</p>
+</div>
+
+<h2 style="text-align:center">OUR TEAM</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/359718862_588976683405923_6379399383326591209_n.jpg?ccb=11-4&oh=01_AdTi8tfhrSHgXplG-voolf0tDNRIYLn0tmpEk_ZM5sT68A&oe=64C1FD99" alt="NIKHIL" style="width:100%">
+      <div class="container">
+        <h2>Paikray Nikhil</h2>
+        <p class="title">HEAD PILOT</p>
+        <p>Graduated from Silicon Institute Of Airlines.I have a record of 10000000+ hrs of flying.</p>
+        <p>raktacharitra@gmaili.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/355421514_182526421473435_3267068645569994873_n.jpg?ccb=11-4&oh=01_AdSQHFuXEb-TssjWkkCkibVwz-YNTrz-PGZSwU5boaWYsA&oe=64C1E1BB" alt="kaushik" style="width:100%">
+      <div class="container">
+        <h2>Sahoo Kaushik</h2>
+        <p class="title">CO-PILOT</p>
+        <p>I have been recently rewarded with the best sarcastic co-pilot of all time.</p>
+        <p>rngodin@bgmi.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/353932232_1604493716714624_8886742823118034945_n.jpg?ccb=11-4&oh=01_AdTkLNi6hJsIfum6OaVExrmaH1PMViVpbcIzZWlVwSNtJA&oe=64C14582" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Arora Arya</h2>
+        <p class="title">NAVIGATOR</p>
+        <p>I am the cutest navigator you will ever find.Navigating and connecting lives since 2003.</p>
+        <p>aaaaarya@chicken.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/358425116_785653949865329_8273253904797363007_n.jpg?ccb=11-4&oh=01_AdRHOITCXkqDu0Szb3BJypqB9YzXxfD_b0APJsBqRiQdLQ&oe=64C1FEE6" style="width:100%">
+      <div class="container">
+        <h2>Panda Nitish</h2>
+        <p class="title">Mechanic</p>
+        <p>Gotta problem? call mee.</p>
+        <p>toohigh@gmaili.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
