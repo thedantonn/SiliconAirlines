@@ -1,0 +1,39 @@
+{
+  "logininfo": [
+    {
+      "email": "arya@we.com",
+      "pw": "iamcute",
+      "id": 1
+    },
+    {
+      "email": "mailolovesroti@gmail.com",
+      "pw": "roti",
+      "id": 2
+    },
+    {
+      "email": "nitish23@gmail.com",
+      "pw": "nitish",
+      "id": 3
+    }
+  ],
+  "signupinfo": [
+    {
+      "Name": "aaaryaaaaaaaaaa",
+      "Email": "arya@we.com",
+      "Pw": "iamcute",
+      "id": 1
+    },
+    {
+      "Name": "mailo",
+      "Email": "mailolovesroti@gmail.com",
+      "Pw": "roti",
+      "id": 2
+    },
+    {
+      "Name": "nitish ",
+      "Email": "nitish23@gmail.com",
+      "Pw": "something",
+      "id": 3
+    }
+  ]
+}
