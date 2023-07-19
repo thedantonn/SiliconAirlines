@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<title>SILICON AIRLINES</title>
+	<link rel="stylesheet"
+		href="stylen.css">
+</head>
+<body>
+    <background url="https://images.unsplash.com/photo-1529348915581-73628f0cf212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwd2l0aCUyMHBhbG0lMjB0cmVlfGVufDB8fDB8fHww&w=1000&q=80"></background>
+     <header>
+		<h1 class="heading">SILICON AIRLINES</h1>
+		<h3 class="title">Beyond Reach</h3>
+	</header>
+    <div class="container">
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		
+		<div class="form-section">
+
+			
+			<div class="login-box">
+				<input type="email"class="email ele" placeholder="youremail@email.com" id="email1">
+				<input type="password" class="password ele" placeholder="password" id="password1">
+				<button onclick="clicked()" class="clkbtn">Login</button>
+			</div>
+
+			
+			<div class="signup-box"> 
+                <input type="text"	class="name ele" placeholder="Enter your name" id="name">
+				<input type="email"	class="email ele" placeholder="youremail@email.com" id="email2">
+				<input type="password"	class="password ele" placeholder="password" id="password2">	
+                <button onclick="Myfunc()" class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+    </div>
+
+	<script src="index.js"></script>
+</body>
+</html>
+<script>
+    function clicked()
+    {
+        alert("login successful");
+    }
+      async function clicked(){
+       
+       let email = document.getElementById("email1").value;
+       let password = document.getElementById("password1").value;
+   
+   let bud ={
+       email: email,
+       pw: password,
+   };
+   console.log(bud);
+   let res = await fetch ("http://localhost:3000/logininfo",{
+   method: "POST",
+   body : JSON.stringify(bud),
+   headers: {
+       "Content-Type": "application/json",
+   },
+   });
+   let dat =  await res.json();
+   window.location.href = "boarding.html";;
+}
+async function Myfunc(){
+       
+       let name = document.getElementById("name").value;
+       let email2 = document.getElementById("email2").value;
+       let password2 = document.getElementById("password2").value;
+   
+   let GetData ={
+       Name : name,
+       Email: email2,
+       Pw: password2,
+   };
+   console.log(GetData);
+   let reso = await fetch ("http://localhost:3000/signupinfo",{
+   method: "POST",
+   body : JSON.stringify(GetData),
+   headers: {
+       "Content-Type": "application/json",
+   },
+   });
+   let data =  await reso.json();
+   console.log(data);
+}
+
+</script>
+
